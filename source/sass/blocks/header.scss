@@ -67,6 +67,15 @@
     padding: 16px 32px;
     font-weight: 700;
     color: inherit;
+
+    &:hover,
+    &:focus {
+      color: rgba(#000000, 0.6);
+    }
+
+    &:active {
+      color: rgba(#000000, 0.3);
+    }
   }
 }
 
