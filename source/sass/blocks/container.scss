@@ -1,6 +1,12 @@
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1080px;
+  padding: 0 $container-padding-mobile;
+  max-width: 1154px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 $container-padding-tablet;
+  }
 }

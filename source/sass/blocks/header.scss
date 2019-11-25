@@ -14,11 +14,11 @@
   display: block;
 }
 
-.header__nav-wrapper {
+.header__container {
   display: none;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 768px) {
   .header {
     position: relative;
   }
@@ -26,13 +26,13 @@
   .header__logo {
     position: absolute;
     top: 22px;
-    left: 5%;
+    left: $container-padding-tablet;
     z-index: 1;
     background: transparent;
     padding: 0;
   }
 
-  .header__nav-wrapper {
+  .header__container {
     display: block;
   }
 
@@ -44,20 +44,17 @@
   .header__nav-item {
     display: none;
 
-    &:first-child .header__nav-link {
+    &--income .header__nav-link {
       padding-left: 0;
     }
 
-    &:last-child .header__nav-link {
-      padding-right: 0;
-    }
-
-    &--regular {
+    &--delivery {
       display: block;
       margin-left: auto;
     }
 
-    &--regular .header__nav-link {
+    &--delivery .header__nav-link {
+      padding-right: 0;
       font-weight: 400;
       color: #444444;
     }
@@ -65,6 +62,8 @@
 
   .header__nav-link {
     display: block;
+    position: relative;
+    z-index: 1;
     padding: 16px 32px;
     font-weight: 700;
     color: inherit;
