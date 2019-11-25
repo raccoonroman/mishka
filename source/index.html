@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mishka</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<svg aria-hidden="true" style="display: none;">
+  <symbol viewBox="0 0 26.943 34.09" id="logo-html-academy">
+    <title>Логотип html-academy</title>
+    <path d="M13.62 0h-.15L0 1.41v24.66l13.47 8 13.43-8V1.41zM25 12.13l-11.51-6.8v-.1h-.08l-.09-.06v.11l-11.4 6.84v-9l11.55-1.18L25 3.15zM13.4 6.79l11.52 6.71-4.48 2.64-7.09-4.22v1.41l5.9 3.52-.86.5-5-3v1.42l3.83 2.27-.79.52-3-1.78v1.42l1.85 1.09-1.8 1.08L2 13.62zM1.92 15.13l11.42 6.79v1l-7.93-4.69v1.42l8 4.8v1.07l-8-4.74v1.42l8 4.82 8.14-4.87V17L25 15v10l-11.53 6.85L1.92 25z"/>
+  </symbol>
+
+</svg>
+
+<header class="header">
+  <a class="header__logo">
+    <picture>
+      <source media="(min-width: 1050px)" srcset="img/mishka-logo-desktop.svg">
+      <source media="(min-width: 668px)" srcset="img/mishka-logo-tablet.svg">
+      <img class="header__logo-img" src="img/mishka-logo-mobile.svg" alt="Логотип Mishka">
+    </picture>
+  </a>
+  <nav class="main-nav">
+    <div class="container main-nav__container">
+      <button class="main-nav__toggle" type="button">X</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--first">
+          <a class="main-nav__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container header__nav-wrapper">
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#">Новые поступления</a>
+      </li>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#">Распродажа</a>
+      </li>
+      <li class="header__nav-item header__nav-item--regular">
+        <a class="header__nav-link" href="#">Бесплатная доставка по России</a>
+      </li>
+    </ul>
+  </div>
+
+</header>
+
+<main>
+  <section class="hero"></section>
+</main>
+<!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>
