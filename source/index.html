@@ -113,11 +113,30 @@
         </picture>
       </a>
       <p class="week-product__price">Цена: 990 руб.</p>
-      <a href="#" class="button week-product__button">Заказать</a>
+      <a href="#" class="button week-product__button js-open-product-size">Заказать</a>
     </div>
   </article>
 </main>
-<!-- <script src="js/script.js"></script> -->
+
+<div class="popup product-size popup--hidden">
+  <div class="popup__box product-size__box">
+    <p class="product-size__title">Добавить в корзину</p>
+    <p class="product-size__subtitle">Выберите размер:</p>
+    <ul class="product-size__list">
+      <li class="product-size__item">
+        <button class="product-size__button active" type="button">S</button>
+      </li>
+      <li class="product-size__item">
+        <button class="product-size__button" type="button">M</button>
+      </li>
+      <li class="product-size__item">
+        <button class="product-size__button" type="button">L</button>
+      </li>
+    </ul>
+    <button class="button button--turquoise product-size__button-add js-close-product-size" type="button">Добавить</button>
+  </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

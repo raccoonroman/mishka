@@ -83,6 +83,10 @@ body {
   text-align: center;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .button {
   display: block;
   padding: 14px;
@@ -93,7 +97,14 @@ body {
   color: #444444;
   text-transform: uppercase;
   border: 2px solid #444444;
+  cursor: pointer;
   transition: color 0.25s, background-color 0.25s;
+
+  &--turquoise {
+    color: #ffffff;
+    border-color: #63d1bb;
+    background-color: #63d1bb;
+  }
 
   &:hover,
   &:focus {
@@ -101,7 +112,13 @@ body {
     background-color: #444444;
   }
 
-  &:active {
+  &--turquoise:hover,
+  &--turquoise:focus {
+    background-color: #59d5bc;
+  }
+
+  &:active,
+  &--turquoise:active {
     color: rgba(#ffffff, 0.3);
   }
 }
