@@ -27,6 +27,7 @@ var getScrollBarWidth = function(el) {
 var openPopupProductSize = function(evt) {
   evt.preventDefault();
   popupProductSize.classList.remove('popup--hidden');
+  popupProductSize.style.overflowY = 'scroll';
   document.body.classList.add('noscroll');
   var scrollBarWidth = getScrollBarWidth(popupProductSize);
   document.body.style.paddingRight = scrollBarWidth + 'px';
@@ -35,6 +36,7 @@ var openPopupProductSize = function(evt) {
 var closePopupProductSize = function(evt) {
   evt.preventDefault();
   popupProductSize.classList.add('popup--hidden');
+  popupProductSize.style.overflowY = 'hidden';
   document.body.classList.remove('noscroll');
   document.body.style.paddingRight = '0';
 };
