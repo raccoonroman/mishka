@@ -68,11 +68,17 @@ window.addEventListener("keydown", function(evt) {
 //product size, code like mvc
 var productSize = { active: 'S' };
 
+var setActiveSize = function() {
+  var currentSize = document.querySelector('.product-size__button[data-size="' + productSize.active + '"]');
+  currentSize.classList.add('active');
+};
+
+setActiveSize();
+
 watch(productSize, function() {
   var activeSize = document.querySelector('.product-size__button.active');
-  var currentSize = document.querySelector('.product-size__button[data-size="' + productSize.active + '"]');
   activeSize.classList.remove('active');
-  currentSize.classList.add('active');
+  setActiveSize();
 });
 
 var productSizeButtons = document.querySelectorAll('.product-size__button');
