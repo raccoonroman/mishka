@@ -15,6 +15,7 @@
 // });
 
 
+//popup
 var openProductSizeButtons = document.querySelectorAll('.js-open-product-size');
 var closeProductSizeButtons = document.querySelectorAll('.js-close-product-size');
 var popupProductSize = document.querySelector('.product-size');
@@ -61,4 +62,22 @@ window.addEventListener("keydown", function(evt) {
       popupProductSize.classList.add("popup--hidden");
     }
   }
+});
+
+
+//product size, code like mvc
+var productSize = { active: 'S' };
+
+watch(productSize, function() {
+  var activeSize = document.querySelector('.product-size__button.active');
+  var currentSize = document.querySelector('.product-size__button[data-size="' + productSize.active + '"]');
+  activeSize.classList.remove('active');
+  currentSize.classList.add('active');
+});
+
+var productSizeButtons = document.querySelectorAll('.product-size__button');
+productSizeButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    productSize.active = button.dataset.size;
+  });
 });

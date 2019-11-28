@@ -43,6 +43,12 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    border-color: rgba(#444444, 0.3);
+    outline: none;
+  }
+
   &.active {
     border-color: #63d1bb;
   }
