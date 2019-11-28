@@ -53,3 +53,20 @@
   margin: 31px 0 16px;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .product-size__box {
+    padding: 30px 105px;
+  }
+
+  .product-size__title {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .product-size__subtitle {
+    margin: 12px 0 14px;
+    font-size: 17px;
+  }
+}
